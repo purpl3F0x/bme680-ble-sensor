@@ -1,0 +1,43 @@
+# Copyright (c) 2021-2023 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  # self:
+  #   west-commands: scripts/west-commands.yml
+
+  remotes:
+    - name: ncs
+      url-base: https://github.com/nrfconnect
+
+    - name: bosch
+      url-base: https://github.com/boschsensortec
+
+  group-filter: [+bsec]
+
+  projects:
+    - name: nrf
+      remote: ncs
+      repo-path: sdk-nrf
+      revision: v2.5.0
+      import: true
+    
+    - name: bme68x
+      repo-path: Bosch-BME68x-Library
+      remote: bosch
+      path: modules/lib/bme68x
+      groups: 
+        - bsec
+
+    - name: bsec
+      repo-path: Bosch-BSEC2-Library
+      remote: bosch
+      path: modules/lib/bsec
+      groups: 
+        - bsec
+    - name: bsec_arduino
+      repo-path: BSEC-Arduino-library
+      remote: bosch
+      path: modules/lib/bsec_arduino
+      groups: 
+        - bsec
+

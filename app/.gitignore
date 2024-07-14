@@ -1,0 +1,12 @@
+# Ignore everything
+/*
+
+# But not these directories
+!/src
+!/scripts
+!/boards
+# Include files in the root directory
+!/*.*
+
+# Include all files inside boards directory
+!/boards/**

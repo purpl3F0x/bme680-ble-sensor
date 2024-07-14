@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"nrf-connect.applications": [
+			"${workspaceFolder}/app"
+		],
+		"rust-analyzer.linkedProjects": [
+			"${workspaceFolder}/app/scripts/ble_logger/Cargo.toml"
+		]
+	}
+}

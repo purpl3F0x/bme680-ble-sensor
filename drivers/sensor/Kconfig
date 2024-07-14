@@ -1,0 +1,5 @@
+# Copyright (c) 2024 Stavros Avramidis
+
+if SENSOR
+rsource "bme68x_bsec/Kconfig"
+endif # SENSOR
